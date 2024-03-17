@@ -5,9 +5,8 @@ import Sidebar from "./sidebar";
 const Navigation = () => {
     return (
         <>
-            <Sidebar />
             <Navbar />
-            
+            <Sidebar />
         </>
     )
 }

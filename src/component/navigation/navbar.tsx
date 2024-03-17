@@ -2,7 +2,6 @@
 import Link from "next/link";
 import Dropdown from "./dropdown";
 import { SetStateAction, useState } from "react";
-import EmailCopy from "./emailCopy";
 
 
 const Navbar  = () => {
@@ -34,7 +33,9 @@ const Navbar  = () => {
                             <Dropdown onDropdownItemClick={(itemName) => handleClick(itemName)} onToggle={handleDropdownToggle}/>
                         </li>
                         <li>
-                           <EmailCopy /> 
+                           <a href="https://drive.google.com/file/d/1gRnfXqz0BgboJE4POh8SMRli2ZQVl443/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                            Resume
+                           </a>
                         </li>
                     </ul>
                 </div>

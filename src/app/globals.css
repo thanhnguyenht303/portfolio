@@ -8,6 +8,10 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.main-content {
+  flex-grow: 1;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -18,12 +22,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
@@ -52,17 +53,16 @@ body {
 }
 
 .navbar-container ul {
-    margin-left: 50%;
-    padding: 1rem;
-    font-weight: 500;
-    display: inline-flex;
-    box-sizing: border-box;
-    width: 100%;
-    justify-content: space-around;
+  margin-left: 50%;
+  padding: 1rem;
+  font-weight: 500;
+  display: inline-flex;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .navbar-container .onsite {
-  /* display: block; */
   padding: 0.5rem 0.75rem;
   color: white;
   background-color: #2563eb;
@@ -100,7 +100,7 @@ body {
   margin-left: 0 !important;
   flex-direction: column;
   left: 0;
-  top:  100%;
+  top: 100%;
   gap: 0.5rem;
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
@@ -120,7 +120,8 @@ body {
 }
 
 .dropdown-item:hover {
-  background-color: #f3f4f6;;
+  background-color: #f3f4f6;
+  ;
 }
 
 .dropdown-item p {
@@ -155,15 +156,28 @@ body {
   height: 2.5rem;
 }
 
+.project1-content {
+  margin-top: 8rem;
+  margin-left: 6rem;
+}
 
+.project1-content h1 { 
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.project1-content p {
+  max-width: 60ch;
+  text-align: justify;
+}
 
 
 
 @media (max-width: 768px) {
   .navbar-container ul {
     margin-left: 0;
-    padding: 0.25rem; 
-    margin-top: 0; 
+    padding: 0.25rem;
+    margin-top: 0;
     border: none;
     gap: 2rem;
   }
@@ -180,7 +194,8 @@ body {
     padding: 0;
     width: auto;
   }
-/* 
+
+  /* 
   .navbar-container li:hover {
     color: #1d4ed8;
     background-color: transparent;
@@ -194,5 +209,5 @@ body {
     width: 2rem;
     height: 2rem;
   }
-  
+
 }
