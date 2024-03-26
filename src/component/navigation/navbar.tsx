@@ -1,13 +1,15 @@
 "use client";
 import Link from "next/link";
 import Dropdown from "./dropdown";
-import { SetStateAction, useState } from "react";
-
+import { SetStateAction, useEffect, useState } from "react";
+import { usePathname} from "next/navigation";
 
 const Navbar  = () => {
 
     const [activeItem, setActiveItem] = useState("");
     const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const pathname = usePathname();
     
     const handleClick = (itemName: SetStateAction<string>) => {
         setActiveItem(itemName);
@@ -16,6 +18,18 @@ const Navbar  = () => {
     const handleDropdownToggle = (isOpen:boolean) => {
         setDropdownOpen(isOpen);
     }
+
+    useEffect(() => {
+        if (pathname === '/') {
+            setActiveItem('home');
+        } 
+        else if (pathname === "/climate-change-project" || pathname == "/project-2") {
+            setActiveItem('dropdown');
+        }
+        else {
+            setActiveItem('');
+        }
+    }, [pathname]);
  
     return (
         <div>
@@ -23,8 +37,7 @@ const Navbar  = () => {
                 <div className="navbar-container">
                     <ul>
                         <li 
-                        className={activeItem === "home" ? "onsite" : ""}
-                        onClick={()=>handleClick("home")}>
+                        className={activeItem === "home" ? "onsite" : ""}>
                             <Link href="/" > Home </Link>
                         </li>
                         <li 

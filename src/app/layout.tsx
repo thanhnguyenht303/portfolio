@@ -22,9 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex flex-col`}>
+      <body className={`${inter.className}`}>
         <Navigation />
-        <div className="main-content flex-grow">
+        <div className="main-content">
           <ToastContainer />
           {children}
         </div>
