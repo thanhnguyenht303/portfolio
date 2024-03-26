@@ -285,10 +285,6 @@ body {
   margin-bottom: 1rem;
 }
 
-
-
-
-
 .project2-content {
   width: 90%;
   display: flex;
@@ -328,7 +324,7 @@ body {
   color: #FF0000; 
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .navbar-container ul {
     margin-left: 0;
     padding: 0.25rem;
