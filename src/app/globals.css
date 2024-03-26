@@ -163,16 +163,16 @@ body {
 
 
 .homepage-container {
+  margin-top: 6rem;
   display: flex;
   flex-direction: column; 
   align-items: center; 
   justify-content: center; 
   height: 100vh; 
-  margin: 0 auto; 
 }
 
 .homepage-container .content {
-  margin-left: 5rem;
+  margin-left: 3rem;
   display: grid;
   grid-template-columns: 40% 60%;
   gap: 2rem;
@@ -353,6 +353,17 @@ body {
   .navbar-container li:hover {
     color: #87a6fc;
     background-color: transparent;
+  }
+  .dropdown-container{
+    gap: 0.25rem !important;
+  }
+
+  .dropdown-item {
+    background-color: #4b5563 !important;
+  }
+
+  .dropdown-item-active {
+    background-color: #0726d4 !important;
   }
 
   .sidebar-container {
