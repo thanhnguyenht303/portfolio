@@ -1,12 +1,17 @@
+import Image from "next/image";
 import ConnectButton from "@/component/homepage/connectBut";
 
 export default function Home() {
+
+  const naturalWidth = 500; // Example width
+  const naturalHeight = 500;
+
   return (
     <div className="homepage-container">
       <div className="content">
         <div className="left-side">
           <div className="chatbox">
-            <svg width="6rem" height="6rem" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg preserveAspectRatio="xMidYMid meet" width="6rem" height="6rem" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 fillRule="evenodd"
                 clipRule="evenodd"
@@ -21,7 +26,14 @@ export default function Home() {
           <div style={{display:'flex', alignSelf:'center', marginTop:'1rem'}}><ConnectButton /></div>
         </div>
         <div className="right-side">
-          <img src="/homepage/myself.png" alt="Myself" />
+          <div style={{position: 'relative', width: '100%', height: 'auto'}}></div>
+            <Image
+              src="/homepage/myself.png"
+              alt="Myself"
+              width={naturalWidth}
+              height={naturalHeight}
+              style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+            />
         </div>
       </div>
     </div>  
