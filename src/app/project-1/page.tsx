@@ -26,21 +26,21 @@ export default function climateChangeProject() {
                     </div>
                     <div className="image-explaination">
                         <div className="single-img">
-                            <Image src="/climate-change-project-image/ROI-introduction/COL_sample.png" width={250} height={250} alt=""></Image>
+                            <Image src="/climate-change-project-image/ROI-introduction/cut-off-low.png" width={250} height={250} alt=""></Image>
                             <div>
                                 <p style={{fontWeight: 800, fontSize: 24}}> Cut-off Low (COL) </p> 
                                 <p> A low-pressure system that becomes isolated from the main atmospheric flow, often resulting in extended periods of precipitation or stormy weather. It is characterized by its separation from the main jet stream, which slows its movement.</p>
                             </div>
                         </div>
                         <div className="single-img">
-                            <Image src="/climate-change-project-image/ROI-introduction/CL_sample.png" width={250} height={250} alt=""></Image>
+                            <Image src="/climate-change-project-image/ROI-introduction/closed-low.png" width={250} height={250} alt=""></Image>
                             <div>
                                 <p style={{fontWeight: 800, fontSize: 24}}> Closed Low (CL) </p> 
                                 <p> A low-pressure area with winds circulating completely around the center, leading to a variety of weather conditions including storms and rainfall. It is defined by its enclosed circulation, distinguishing it from open wave systems.</p>
                             </div>
                         </div>
                         <div className="single-img">
-                            <Image src="/climate-change-project-image/ROI-introduction/COH_sample.png" width={250} height={250} alt=""></Image>
+                            <Image src="/climate-change-project-image/ROI-introduction/cut-off-high.png" width={250} height={250} alt=""></Image>
                             <div>
                                 <p style={{fontWeight: 800, fontSize: 24}}> Cut-off High (COH) </p> 
                                 <p> An isolated high pressure system cut off from the main jet stream, leading to prolonged dry or warm weather conditions. It typically causes clear skies and suppresses cloud formation and precipitation</p>

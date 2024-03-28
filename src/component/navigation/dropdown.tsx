@@ -55,7 +55,7 @@ const Dropdown: FunctionComponent<{
   },[pathname])
 
   return (
-    <div ref={dropdownRef}>
+    <div style={{display:"flex", justifyContent:"center", flexDirection:"column"}} ref={dropdownRef}>
       <button onClick={toggleOpen} >Projects</button>
       {isOpen && (
         <ul className="dropdown-container" >
