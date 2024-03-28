@@ -1,7 +1,8 @@
 "use client"
-import { FunctionComponent, useState, useEffect, useRef } from 'react';
+import { FunctionComponent, useState, useEffect} from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useOutsideClick } from './clickOutside';
 
 const Dropdown: FunctionComponent<{ 
   onDropdownItemClick: (itemName: string) => void,
@@ -9,7 +10,7 @@ const Dropdown: FunctionComponent<{
   = ({ onDropdownItemClick, onToggle }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeItem, setActiveItem] = useState("");
-  const dropdownRef = useRef<HTMLDivElement>(null);
+
   const pathname = usePathname();
 
 
@@ -26,16 +27,7 @@ const Dropdown: FunctionComponent<{
     }
   }
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        closeDropdown();
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [isOpen]);
+  const dropdownRef = useOutsideClick(() => {closeDropdown()})
 
   const onItemSelect = (itemName: string) => {
     onDropdownItemClick(itemName);

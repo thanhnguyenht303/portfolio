@@ -117,8 +117,18 @@ body {
 }
 
 .navbar .social-media {
+  align-items: center;
+  width: auto;
   display: flex;
   height: 100%;
+}
+
+.navbar .social-media .social-icon {
+  display: none;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  right: 0;
 }
 
 .navbar .social-media ul {
@@ -332,7 +342,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .navbar {
-    padding: 0;
+    padding: 0 1rem 0 0;
   }
 
   .navbar-container {
@@ -380,6 +390,28 @@ body {
   
   .navbar-container li:hover {
     padding: 0.25rem 0.5rem;
+  }
+
+  .navbar .social-media .social-icon {
+    display: block;
+    cursor: pointer;
+    width: auto;
+    z-index: 10;
+  }
+
+  .navbar .social-media .social-contact.open {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* right: 2rem; */
+    top: 5rem;
+  }
+
+  .navbar .social-media .social-contact {
+    display: none;
+    box-sizing: border-box;
+    border:none;
+    gap: 0.5rem;
   }
 
   .dropdown-container{
