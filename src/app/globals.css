@@ -170,9 +170,8 @@ body {
 }
 
 .dropdown-item-active {
-  display: block !important;
+  width: 100% !important;
   padding: 0.5rem 0.5rem !important;
-  color: white !important;
   background-color: #2563eb;
 }
 
@@ -185,51 +184,52 @@ body {
 }
 
 .homepage-container {
-  margin-left: 6rem;
-  margin-top: 8rem;
+  position: relative;
+  top: 6rem;
   display: flex;
   flex-direction: column; 
   align-items: center; 
   justify-content: center; 
-  min-height: 100vh;
 }
 
 .homepage-container .content {
   display: grid;
-  grid-template-columns: 40% 60%;
-  gap: 2rem;
+  grid-template-columns: 40% 50%;
+  gap: 4rem;
   width: 90%;
   justify-content: flex-end;
 }
 
-.homepage-container .content .left-side {
+.homepage-container .content .right-side {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
-.homepage-container .content .left-side .chatbox svg {
-  color: #ffffff;
-}
-
-.homepage-container .content .left-side h1 {
+.homepage-container .content .right-side h1 {
   display: flex;
-  align-self: center;
+  text-align: center;
   font-size: 3.5rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
+  background: linear-gradient(88.94deg, #00BAFF 0%, #E57DFF 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
-.homepage-container .content .left-side p {
+.homepage-container .content .right-side p {
   display: flex;
-  align-self: center;
-  text-align: justify;
-  width: 60%;
-  font-size: 1.25rem;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: #B5B5BA;
+  ;
 }
 
-.homepage-container .content .right-side {
+.homepage-container .content .left-side {
   display: flex;
   justify-content: center;
 }
@@ -346,7 +346,6 @@ body {
   }
 
   .navbar-container {
-    width: 10rem;
     flex-direction: column;
     align-items: center;
   }
@@ -403,8 +402,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    /* right: 2rem; */
-    top: 5rem;
+    top: 6rem;
   }
 
   .navbar .social-media .social-contact {
@@ -427,46 +425,27 @@ body {
     background-color: #0726d4 !important;
   }
 
-  .sidebar-container {
-    width: 2.5rem;
-  }
-
-  .sidebar-nav svg {
-    width: 2rem;
-    height: 2rem;
-  }
-
   .homepage-container {
-    margin-top: 2rem;
-    margin-left: 3rem;
+    top: 4.5rem;
   }
-
   .homepage-container .content {
     grid-template-columns: auto;
     width: 80%;
   }
 
-  .homepage-container .content .left-side h1 {
+  .homepage-container .content .right-side {
+    align-items: center;
+  }
+
+  .homepage-container .content .right-side h1 {
     font-size: 2rem;
     font-weight: 500;
   }
 
-  .homepage-container .content .left-side p {
-    font-size: 1rem;
-  }
-
-  .chatbox {
-    width: 4.5rem;
-    height: 5rem;
-  }
-
-  .chatbox svg {
-    width: 100%;
-    height: 100%;
-  }
-
-  .chatbox svg text{
-    font-size: 0.2rem;
+  .homepage-container .content .right-side p {
+    width: 80%;
+    font-size: 0.85rem;
+    line-height: 1.5rem;
   }
 
   .project1-content {

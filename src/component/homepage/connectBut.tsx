@@ -7,18 +7,18 @@ const ConnectButton: React.FC = () => {
       target="_blank"
       rel="noopener noreferrer"
       style={{
-        width:"85px",
-        height:"85px",
-        display: 'inline-flex',
-        backgroundColor: '#CCCCCC',
+        width:"199px",
+        height:"59px",
+        display: 'flex',
+        backgroundColor: '#ffffff',
         color: '#000000',
         textDecoration: 'none',
-        borderRadius: '50%',
+        borderRadius: '10px',
         fontWeight: 'bold',
         fontSize: '17px',
-        textAlign: 'center',
+        justifyContent: "center",
         alignItems: 'center',
-        boxShadow: '4px 6px 8px #999999',
+        boxShadow: '0px -4px 0px 0px #E8E6E9 inset',
       }}
     >
       Let&apos;s Connect
