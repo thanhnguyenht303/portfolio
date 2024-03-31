@@ -162,6 +162,7 @@ const Navbar = () => {
                                             width={24}
                                             height={24}
                                             alt="Instagram"
+                                            style={{width:"auto", height:"auto"}}
                                         />
                                     </a>
                                 </li>

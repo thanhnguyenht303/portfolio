@@ -8,6 +8,7 @@
   }
 }
 
+/* Main Page*/
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: #09203f;
@@ -27,6 +28,7 @@ body {
   flex-direction: column;
 }
 
+/* Navbar */
 .navbar {
   background-color: #000000;
   position: fixed;
@@ -141,7 +143,6 @@ body {
   gap: 1.5rem;
 }
 
-
 .dropdown-container {
   display: flex;
   width: 100% !important;
@@ -182,6 +183,8 @@ body {
 .dropdown-item p {
   color: #ffffff;
 }
+
+/* Home page  */
 
 .homepage-container {
   position: relative;
@@ -234,10 +237,12 @@ body {
   justify-content: center;
 }
 
+/* Project 1 */
+/* Project 1 - Content */
 .project1-content {
-  margin-top: 8rem;
-  margin-left: 6rem;
+  margin: 8rem 2rem 4rem 4rem;
 }
+
 
 .project1-content h1 { 
   color: #dbdcdf;
@@ -256,10 +261,12 @@ body {
   margin-bottom: 3rem;
 }
 
+/*Project 1 - Intro */
+
 .project1-content .intro {
   max-width: 100%;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 45% 55%;
 }
 
 .project1-content .intro .text-intro p {
@@ -273,14 +280,14 @@ body {
 
 .project1-content .intro .text-intro li {
   display: grid;
-  line-height: 2rem;
+  line-height: 1.75rem;
   margin-top: 1rem;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 40% 60%;
 }
 
 .project1-content .intro .image-explaination {
   margin-top: 1rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
   max-width: 90%;
   display: grid;
   grid-template-rows: auto auto auto;
@@ -300,6 +307,32 @@ body {
   font-style: normal;
   margin-bottom: 1rem;
 }
+
+/* Project 1 - Pre process Image */
+
+.image-preprocess .image-sample {
+  display: inline-block;
+  width: 100%;
+  height: max-content;
+  gap: 1rem;
+  align-items: start;
+  margin: auto
+}
+
+.image-preprocess .image-sample .left-side {
+  float: left;
+  width: calc(35% -  2.2rem);
+  margin-right: 2rem;
+}
+
+.image-preprocess .image-sample .right-side {
+  float: right;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: calc(60% - 1rem);
+}
+/* Project 2 */
 
 .project2-content {
   width: 90%;
@@ -340,6 +373,9 @@ body {
   color: #FF0000; 
 }
 
+
+
+/* Responsive */
 @media screen and (max-width: 768px) {
   .navbar {
     padding: 0 1rem 0 0;
@@ -468,6 +504,8 @@ body {
 
   .project1-content .intro .image-explaination {
     margin-left: 0rem;
+    align-self: center;
+
   }
 
   .project1-content .intro .image-explaination .single-img {
@@ -476,6 +514,18 @@ body {
     gap: 0.75rem;
   }
   
+  .image-preprocess .image-sample .left-side {
+    width: 100%;
+    float: none;
+    margin-bottom: 2rem;
+  }
+
+  .image-preprocess .image-sample .right-side {
+    float: none;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
   .project2-content {
     margin-left: 3rem;
     margin-top: 4rem;

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ConnectButton from "@/component/homepage/connectBut";
+import ConnectButton from "@/components/homepage/connectBut";
 
 export default function Home() {
 
