@@ -50,7 +50,7 @@ export default function climateChangeProject() {
                     </div>
                 </div>
                 <div className="image-preprocessing">
-                    <h1 style={{display:"flex", justifyContent:"flex-start", fontSize:"1.75rem"}}>Image Pre-processing</h1>
+                    <h1 style={{display:"flex", justifyContent:"flex-start", fontSize:"1.75rem"}}>Image Preprocessing</h1>
                     <div className="technique-explain">
                     
                     </div>

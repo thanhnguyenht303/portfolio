@@ -21,8 +21,8 @@ const Chart = () => {
         }
       }%%
     flowchart TB
-        A([Grayscale Images]) == Binary threshold and cv2.connectedComponents ==>  B([Connected Component Images])
-        B == cv.findContours and predefined criteria ==> E([Region of non Interest]) & D([ROI - Region of Interest])
+        A([Grayscale Images]) == Binary threshold and \n cv2.connectedComponents ==>  B([Connected Component Images])
+        B == cv.findContours \n  and predefined criteria ==> E([Region of non Interest]) & D([ROI - Region of Interest])
     `
     const chart2 = `
     %%{
@@ -39,7 +39,7 @@ const Chart = () => {
       }%%
     flowchart TB;
         A([ROI - Region of Interest]) == Coordination's calculation ==> B([Coordination for ROI]);
-        B == Take the 15x15 area square each ROI coordination ==> C([Data set with 225 features of pressure data]);
+        B == Take the 15x15 area square \n for each ROI coordination ==> C([Data set with 225 \n features of pressure data]);
     `
 
     const chart3 = `
