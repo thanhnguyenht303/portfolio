@@ -50,14 +50,11 @@ export default function climateChangeProject() {
                     </div>
                 </div>
                 <div className="image-preprocessing">
-                    <h1>Image Pre-processing</h1>
+                    <h1 style={{display:"flex", justifyContent:"flex-start", fontSize:"1.75rem"}}>Image Pre-processing</h1>
                     <div className="technique-explain">
-                    Applying binary thresholding in `OpenCV` to simplify grayscale images into binary form facilitating the distinction between distinct components by setting pixel values to either black or white based on a defined threshold. Following this, the `cv2.connectedComponents` function labels each connected region in the binary image with a unique identifier, effectively grouping and differentiating connected pixels. The process involves iterating through each identified component to create masks for individual regions while excluding the background, and saving these as separate component images. Each component image is then processed to highlight contours using the `cv.drawContours` method. Utilizing predefined criteria, contours are classified into regions of interest and non-regions of interest. For every region of interest, calculations are performed to determine the coordinates of each region&apos;s center, facilitating precise analysis and manipulation of the image&apos;s components. This methodical approach streamlines the task of isolating and analyzing specific parts of complex images, making it particularly useful for applications that require detailed, component-level image analysis.
+                    
                     </div>
                     <PreprocessImage />
-                    <div>
-
-                    </div>
                 </div>
                 <div className="model-present">
                     <div>

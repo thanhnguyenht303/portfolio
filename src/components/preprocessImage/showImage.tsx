@@ -47,7 +47,6 @@ const PreprocessImage = () => {
 
     return (
         <div className='image-preprocess'>
-            <h1>Sample Images</h1>
             <div className='image-sample'>
                 <div className='left-side'>
                     <Swiper

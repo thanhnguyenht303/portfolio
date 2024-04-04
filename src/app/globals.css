@@ -266,13 +266,12 @@ body {
 .project1-content .intro {
   max-width: 100%;
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 50% 50%;
 }
 
 .project1-content .intro .text-intro p {
   margin-top: 1rem;
   max-width: 70ch;
-  text-align: justify;
   line-height: 2rem;
   font-style: normal;
   margin-bottom: 1rem;
@@ -331,6 +330,16 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   width: calc(60% - 1rem);
+  /* background: rgba(255, 255, 255, 0.1); */
+}
+
+.chart-explain1 {
+  display: grid;
+  grid-template-columns: 40% 25% 35%;
+  width: 98%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 /* Project 2 */
 
@@ -524,6 +533,11 @@ body {
     float: none;
     width: 100%;
     margin-top: 1rem;
+  }
+
+  .chart-explain1 {
+    grid-template-columns: 95%;
+    row-gap: 1rem;
   }
 
   .project2-content {
