@@ -11,7 +11,7 @@ import colorLinkedin from "../../../public/homepage/colorLinkedin.svg";
 import github from "../../../public/homepage/github.svg";
 import instagram from "../../../public/homepage/instagram.svg";
 import colorInstagram from "../../../public/homepage/colorInstagram.svg";
-import { useOutsideClick } from './clickOutside';
+import { useOutsideClick } from '../comps/clickOutside';
 
 
 

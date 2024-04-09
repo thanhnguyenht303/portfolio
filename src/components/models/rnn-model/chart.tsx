@@ -18,6 +18,6 @@ export default class Mermaid extends React.Component<MermaidProps> {
   }
 
   render() {
-    return <div style={{width:"auto", height:"fit-content"}} className="mermaid">{this.props.chart}</div>;
+    return <div className="mermaid dynamic-mermaid">{this.props.chart}</div>;
   }
 }

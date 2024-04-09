@@ -4,6 +4,7 @@ import "./globals.css";
 import Navigation from '@/components/navigation';
 import { ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from "@/components/footer";
 
 
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           <ToastContainer />
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   );

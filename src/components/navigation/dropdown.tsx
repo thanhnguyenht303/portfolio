@@ -2,7 +2,7 @@
 import { FunctionComponent, useState, useEffect} from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useOutsideClick } from './clickOutside';
+import { useOutsideClick } from '../comps/clickOutside';
 
 const Dropdown: FunctionComponent<{ 
   onDropdownItemClick: (itemName: string) => void,

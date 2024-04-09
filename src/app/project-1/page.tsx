@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PreprocessImage from "@/components/preprocessImage";
+import Model from '../../components/models/index';
 
 export default function climateChangeProject() {
     return (
@@ -50,16 +51,12 @@ export default function climateChangeProject() {
                     </div>
                 </div>
                 <div className="image-preprocessing">
-                    <h1 style={{display:"flex", justifyContent:"flex-start", fontSize:"1.75rem"}}>Image Preprocessing</h1>
-                    <div className="technique-explain">
-                    
-                    </div>
+                    <h1>Image Preprocessing</h1>
                     <PreprocessImage />
                 </div>
+                <h1 className="title-model"> Sample Model </h1>
                 <div className="model-present">
-                    <div>
-
-                    </div>
+                    <Model />
                 </div>
             </div>
         </>
