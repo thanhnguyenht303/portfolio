@@ -10,7 +10,7 @@ export default function Model() {
                 <div className="cnn-model">
                     <div className="model">
                         <h2> CNN Model </h2>
-                        <Image src='/climate-change-project-image/models/CNN-model(2).png' alt="CNN Model" width={600} height={500} />
+                        <Image src='/climate-change-project-image/models/CNN-model.png' alt="CNN Model" width={600} height={500} />
                     </div>
                     <div className="cnn-layer-exp">
                         <h2> How CNN works</h2>
