@@ -850,7 +850,6 @@ body {
   margin: 0.5rem;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
   justify-content: flex-start;
   width: 100%;
 }
@@ -1249,12 +1248,13 @@ footer {
   }
 
   .modal-res .content {
-    gap: 0.6rem;
+    margin-top: 0.4rem;
+    gap: 0.4rem;
   }
   
   .modal-res .content .result {
     grid-template-columns: 90%;
-    gap: 0.75rem;
+    gap: 0.5rem;
   }
   
   .modal-res .content .result .matrix-metric {
@@ -1286,13 +1286,12 @@ footer {
   .modal-res .content .explaination p {
     font-size: 0.6rem;
     margin-top: 0.4rem;
-    line-height: 0.8rem;
+    line-height: 0.7rem;
   }
 
   .modal-res .conclusion span {
     font-size: 0.7rem;
  }
-
 
   .project2-content {
     margin-left: 3rem;
