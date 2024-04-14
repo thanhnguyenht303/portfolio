@@ -1,6 +1,7 @@
 import Image from "next/image";
 import PreprocessImage from "@/components/preprocessImage";
 import Model from '../../components/models/index';
+import { Result } from "@/components/results";
 
 export default function climateChangeProject() {
     return (
@@ -57,6 +58,13 @@ export default function climateChangeProject() {
                 <h1 className="title-model"> Sample Model </h1>
                 <div className="model-present">
                     <Model />
+                </div>
+                <h1 className="title-model" style={{marginTop:"2rem", marginBottom:"0.75rem"}}>Sampe Result</h1>
+                <p style={{display:"flex", justifyContent:"flex-start"}}>The sample data comprises two years, 2000 and 2001, for training, and 2002 for testing.</p>
+                <div style={{display:"flex", justifyContent:"center"}}>
+                <div className="model-res">
+                    <Result />
+                </div>
                 </div>
             </div>
         </>

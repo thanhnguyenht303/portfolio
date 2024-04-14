@@ -74,7 +74,7 @@ const FModelRNN = () => {
           </div>
           <div className="LSTM">
             <h2> LSTM - Long Short Term Memory</h2>
-            <Image src='/climate-change-project-image/models/LSTM.png' alt='lstm model' width={500} height={400} />
+            <Image src='/climate-change-project-image/models/LSTM.png' alt='lstm model' width={550} height={400} />
           </div>
         </div>
         <div className="rnn-model-explaination">
