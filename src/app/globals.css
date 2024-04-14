@@ -1262,8 +1262,8 @@ footer {
   }
   
   .modal-res .content .result .matrix-metric .matrix {
-    width: 8.5rem;
-    height: 8.5rem;
+    width: 8rem;
+    height: 8rem;
   }
 
   .modal-res .content .result .matrix-metric .matrix span {
@@ -1271,13 +1271,12 @@ footer {
   }
 
   .modal-res .content .result .matrix-metric table {
-    width: 70%;
-    height: 70%
+    width: 65%;
   }
   
   .modal-res .content .result .matrix-metric tr, th {
-    font-size: 0.8rem !important;
-    padding: 0.5rem;
+    font-size: 0.75rem !important;
+    padding: 0.4rem;
   }
   
   .modal-res .content .result .matrix-metric td {
@@ -1291,7 +1290,7 @@ footer {
   }
 
   .modal-res .conclusion span {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
  }
 
 
