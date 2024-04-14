@@ -45,19 +45,19 @@ export default function CNNModalRes () {
                                     </tr>
                                     <tr>
                                         <td>Accuracy</td>
-                                        <td>86.63</td>
+                                        <td>84.59</td>
                                     </tr>
                                     <tr>
                                         <td>Precision</td>
-                                        <td>65.3</td>
+                                        <td>67.2</td>
                                     </tr>
                                     <tr>
                                         <td>Recall</td>
-                                        <td>67.71</td>
+                                        <td>66.16</td>
                                     </tr>
                                     <tr>
                                         <td>F1 Score</td>
-                                        <td>66.11</td>
+                                        <td>66.41</td>
                                     </tr>
                                     </>
                                 ): ""}

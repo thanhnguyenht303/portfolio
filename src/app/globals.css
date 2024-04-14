@@ -708,7 +708,6 @@ body {
   flex-direction: column;
   gap: 1rem;
   width: 100%;
-  /* margin-bottom: 1rem; */
 }
 
 .rnn-modal-res .content .result {
