@@ -479,6 +479,7 @@ body {
   margin-bottom: 0.5rem;
   margin-left: 2rem;
   display: list-item;
+  font-style: normal;
 }
 
 .mermaid.dynamic-mermaid {
@@ -582,6 +583,7 @@ body {
   margin-bottom: 0.5rem;
   margin-left: 2rem;
   display: list-item;
+  font-style: normal;
 }
 
 .fmodel-cnn .intro-cnn-model .cnn-model .cnn-layer-exp {
@@ -689,93 +691,6 @@ body {
   text-shadow: none;
 }
 
-/* RNN Modal Result */
-.modal-res {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem 0.5rem;
-}
-
-.modal-res h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.modal-res .content {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 100%;
-}
-
-.modal-res .content .result {
-  display: grid;
-  grid-template-columns: 40% 50%;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-res .content .result img {
-  justify-self: center;
-  width: 95%;
-}
-
-.modal-res .content .result .matrix-metric {
-  display: inline-flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.modal-res .content .result .matrix-metric .matrix {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  width: 14rem;
-  height: 14rem;
-}
-
-.modal-res .content .result .matrix-metric tr, th {
-  border: 2px solid #ffffff;
-  text-shadow: none !important;
-  font-size: 1.25rem !important;
-}
-
-.modal-res .content .result .matrix-metric td {
-  border: 2px solid #ffffff;
-  font-size: 1rem;
-}
-
-.modal-res .content .explaination {
-  display: flex;
-  margin-left: 1rem;
-  align-items: flex-start;
-  flex-direction: column;
-  list-style-type: disc;
-}
-
-.modal-res .content .explaination p {
-  display: list-item;
-  font-size: 1.15rem;
-  margin-bottom: 0;
-  margin-top: 0.75rem;
-}
-
-.modal-res .conclusion {
-  margin: 0.5rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  justify-content: flex-start;
-  width: 100%;
-}
-
-.modal-res .conclusion span {
-   font-size: 1.15rem;
-}
-
 /* CNN Result */
 .cnn-result {
   display: flex;
@@ -854,6 +769,94 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   text-shadow: none;
+}
+
+/* Modal Result */
+.modal-res {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+
+.modal-res h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.modal-res .content {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.modal-res .content .result {
+  display: grid;
+  grid-template-columns: 40% 50%;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-res .content .result img {
+  justify-self: center;
+  width: 95%;
+}
+
+.modal-res .content .result .matrix-metric {
+  display: inline-flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.modal-res .content .result .matrix-metric .matrix {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 14rem;
+  height: 14rem;
+}
+
+.modal-res .content .result .matrix-metric tr, th {
+  border: 2px solid #ffffff;
+  text-shadow: none !important;
+  font-size: 1.25rem !important;
+}
+
+.modal-res .content .result .matrix-metric td {
+  border: 2px solid #ffffff;
+  font-size: 1rem;
+}
+
+.modal-res .content .explaination {
+  display: flex;
+  margin-left: 1rem;
+  align-items: flex-start;
+  flex-direction: column;
+  list-style-type: disc;
+}
+
+.modal-res .content .explaination p {
+  display: list-item;
+  font-size: 1.15rem;
+  margin-bottom: 0;
+  margin-top: 0.75rem;
+  font-style: normal;
+}
+
+.modal-res .conclusion {
+  margin: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.modal-res .conclusion span {
+   font-size: 1.15rem;
 }
 
 
@@ -1308,7 +1311,7 @@ footer {
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .modal-res .content .result .matrix-metric .matrix {
     width: 9.5rem;
     height: 9.5rem;
