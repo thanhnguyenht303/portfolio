@@ -11,7 +11,7 @@ export default function CNNModalRes () {
 
     return (
         <>
-            <div className="rnn-modal-res">
+            <div className="modal-res">
                 <h2>Convolutional Neural Network</h2>
                 <div className="content">
                     <div className="result">

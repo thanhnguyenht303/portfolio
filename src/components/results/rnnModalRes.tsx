@@ -11,7 +11,7 @@ export default function RNNModalRes () {
 
     return (
         <>
-            <div className="rnn-modal-res">
+            <div className="modal-res">
                 <h2>Recurrent Neural Network</h2>
                 <div className="content">
                     <div className="result">

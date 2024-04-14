@@ -690,19 +690,19 @@ body {
 }
 
 /* RNN Modal Result */
-.rnn-modal-res {
+.modal-res {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem 0.5rem;
 }
 
-.rnn-modal-res h2 {
+.modal-res h2 {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.rnn-modal-res .content {
+.modal-res .content {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -710,25 +710,26 @@ body {
   width: 100%;
 }
 
-.rnn-modal-res .content .result {
+.modal-res .content .result {
   display: grid;
-  grid-template-columns: 45% 50%;
+  grid-template-columns: 40% 50%;
   gap: 1rem;
   align-items: center;
   justify-content: center;
 }
 
-.rnn-modal-res .content .result img {
+.modal-res .content .result img {
   justify-self: center;
+  width: 95%;
 }
 
-.rnn-modal-res .content .result .matrix-metric {
+.modal-res .content .result .matrix-metric {
   display: inline-flex;
   justify-content: center;
   gap: 1.5rem;
 }
 
-.rnn-modal-res .content .result .matrix-metric .matrix {
+.modal-res .content .result .matrix-metric .matrix {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -736,18 +737,18 @@ body {
   height: 14rem;
 }
 
-.rnn-modal-res .content .result .matrix-metric tr, th {
+.modal-res .content .result .matrix-metric tr, th {
   border: 2px solid #ffffff;
   text-shadow: none !important;
   font-size: 1.25rem !important;
 }
 
-.rnn-modal-res .content .result .matrix-metric td {
+.modal-res .content .result .matrix-metric td {
   border: 2px solid #ffffff;
   font-size: 1rem;
 }
 
-.rnn-modal-res .content .explaination {
+.modal-res .content .explaination {
   display: flex;
   margin-left: 1rem;
   align-items: flex-start;
@@ -755,14 +756,14 @@ body {
   list-style-type: disc;
 }
 
-.rnn-modal-res .content .explaination p {
+.modal-res .content .explaination p {
   display: list-item;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   margin-bottom: 0;
   margin-top: 0.75rem;
 }
 
-.rnn-modal-res .conclusion {
+.modal-res .conclusion {
   margin: 0.5rem;
   display: inline-flex;
   align-items: center;
@@ -771,8 +772,8 @@ body {
   width: 100%;
 }
 
-.rnn-modal-res .conclusion span {
-   font-size: 1.25rem;
+.modal-res .conclusion span {
+   font-size: 1.15rem;
 }
 
 /* CNN Result */
@@ -1203,6 +1204,10 @@ footer {
     width: 88vw;
     height: 90vh;
   }
+  
+  .model-res {
+    width: 100%;
+  }
 
   .rnn-result .content .confusion-matrix .matrix {
     width: 18rem;
@@ -1231,52 +1236,59 @@ footer {
   }
 
 
-  .rnn-modal-res {
+  .modal-res {
     padding: 0.5rem 0.25rem;
   }
   
-  .rnn-modal-res h2 {
+  .modal-res h2 {
     font-size: 1.25rem;
     font-weight: 600;
   }
-  
-  .rnn-modal-res .content .result {
-    grid-template-columns: 90%;
-    gap: 1rem;
+
+  .modal-res .content {
+    gap: 0.6rem;
   }
   
-  .rnn-modal-res .content .result .matrix-metric {
+  .modal-res .content .result {
+    grid-template-columns: 90%;
+    gap: 0.75rem;
+  }
+  
+  .modal-res .content .result .matrix-metric {
     gap: 1.5rem;
   }
   
-  .rnn-modal-res .content .result .matrix-metric .matrix {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    width: 10rem;
-    height: 10rem;
+  .modal-res .content .result .matrix-metric .matrix {
+    width: 8.5rem;
+    height: 8.5rem;
   }
 
-  .rnn-modal-res .content .result .matrix-metric .matrix span {
+  .modal-res .content .result .matrix-metric .matrix span {
+    font-size: 0.7rem !important;
+  }
+
+  .modal-res .content .result .matrix-metric table {
+    width: 70%;
+    height: 70%
+  }
+  
+  .modal-res .content .result .matrix-metric tr, th {
     font-size: 0.8rem !important;
+    padding: 0.5rem;
   }
   
-  .rnn-modal-res .content .result .matrix-metric tr, th {
-    font-size: 0.9rem !important;
-  }
-  
-  .rnn-modal-res .content .result .matrix-metric td {
-    font-size: 0.8rem;
+  .modal-res .content .result .matrix-metric td {
+    font-size: 0.7rem;
   }
 
-  .rnn-modal-res .content .explaination p {
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-    line-height: 1rem;
+  .modal-res .content .explaination p {
+    font-size: 0.6rem;
+    margin-top: 0.4rem;
+    line-height: 0.8rem;
   }
 
-  .rnn-modal-res .conclusion span {
-    font-size: 0.9rem;
+  .modal-res .conclusion span {
+    font-size: 0.8rem;
  }
 
 
@@ -1292,6 +1304,40 @@ footer {
   .project2-content p {
     width: 85%;
     font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .modal-res .content .result .matrix-metric .matrix {
+    width: 9.5rem;
+    height: 9.5rem;
+  }
+
+  .modal-res .content .result .matrix-metric .matrix span {
+    font-size: 0.8rem !important;
+  }
+
+  .modal-res .content .result .matrix-metric table {
+    width: 80%;
+    height: 80%
+  }
+  
+  .modal-res .content .result .matrix-metric tr, th {
+    font-size: 0.95rem !important;
+    padding: 0.5rem;
+  }
+  
+  .modal-res .content .result .matrix-metric td {
+    font-size: 0.85rem;
+  }
+
+  .modal-res .content .explaination p{
+    font-size: 0.95rem;
+  }
+
+  .modal-res .conclusion span {
+    font-size: 1.1rem;
   }
 
 }
