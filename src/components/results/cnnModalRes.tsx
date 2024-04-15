@@ -67,29 +67,29 @@ export default function CNNModalRes () {
                     <div className="explaination">
                         <p>
                             <span style={{fontWeight: 600}}> Tensor Board: </span>
-                            The model perfroms stable in training while the validation (or testing) &apos;s performance is worse and less stable but at some point it performs better which remains a good accuracy for the testing data.
+                            Both training and validation (testing) accuracy trends are converging and increasing overtime. However, the training is more stable but the validation is having higher accuracy. 
                         </p>
                         <p>
                             <span style={{fontWeight:600}}>Accuracy: </span>
-                            The model has an accuracy of 86.63%, indicating a relatively high rate of correct predictions over the total number of predictions.
+                            The model correctly predicts 84.59% of the data, indicating a fairly high level of overall correctness.
                         </p>
                         <p>
                             <span style={{fontWeight:600}}>Precision: </span>
-                            The model shows the precision of 65.3%, which is a moderate rate of true positive predictions out of all positive predictions it makes.
+                            The model has a precision rate of 67.2%, which means that when it predicts a positive result, it is correct 67.2% of the time.
                         </p>
                         <p>
                             <span style={{fontWeight: 600}}>Recall: </span>
-                            The recall is 67.71%, showing that it correctly identifies a fair proportion of actual positives. 
+                            The model has recall rate of 66.16%, representing the fraction of actual positives correctly identified by the model. 
                         </p>
                         <p>
                             <span style={{fontWeight: 600}}>F1 Score: </span>
-                            The F1 score, at 66.11%, suggests a balance between precision and recall, but there&apos;s room for improvement, especially in precision.
+                            An F1 Score of 66.41% suggests a balanced compromise between precision and recall, emphasizing their equal importance.
                         </p>
                     </div>
                 </div>
                 <div className="conclusion">
                 <span style={{fontWeight: 800}}>Conclusion: 
-                    <span style={{fontWeight: 400}}> Overall, the RNN model seems to perform decently on the validation set with reasonable accuracy. However, there seems to be some discrepancy between the precision and recall, which could be addressed by further tuning the model or perhaps by gathering more representative training data.  </span>
+                    <span style={{fontWeight: 400}}> Overall, the CNN model demonstrates a solid general accuracy, however, the moderate precision, recall, and F1 score reveal challenges in its detailed predictive capabilities, particularly in distinguishing between classes with precision.  </span>
                 </span>
                 </div>
             </div>
