@@ -21,8 +21,8 @@ const ShowModel: React.FC = () => {
     return (
         <>
             <Swiper navigation={true} modules={[Navigation]}>
-                <SwiperSlide onClick={() => {setIsModalOpen(true); setActiveSlideIndex(0)}}><RNNChart /></SwiperSlide>
-                <SwiperSlide onClick={() => {setIsModalOpen(true); setActiveSlideIndex(1)}}><CNNChart /></SwiperSlide>
+                <SwiperSlide onClick={() => {setIsModalOpen(true); setActiveSlideIndex(0)}}><CNNChart /></SwiperSlide>
+                <SwiperSlide onClick={() => {setIsModalOpen(true); setActiveSlideIndex(1)}}><RNNChart /></SwiperSlide>
             </Swiper>
             <Modal
                 isOpen={isModalOpen}
@@ -31,8 +31,8 @@ const ShowModel: React.FC = () => {
                 }}
             >
                 <Swiper navigation={true} modules={[Navigation]} initialSlide={activeSlideIndex}>
-                    <SwiperSlide><FModelRNN /></SwiperSlide>
                     <SwiperSlide><FModelCNN /></SwiperSlide>
+                    <SwiperSlide><FModelRNN /></SwiperSlide>
                 </Swiper>
             </Modal>
         </>

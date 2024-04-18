@@ -332,12 +332,13 @@ body {
   float: left;
   width: calc(35% -  2.2rem);
   margin-right: 2rem;
+  height: fit-content;
 }
 
 .image-preprocess .image-sample .right-side {
   float: right;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   width: calc(60% - 1rem);
 }

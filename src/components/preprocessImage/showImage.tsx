@@ -56,12 +56,13 @@ const PreprocessImage = () => {
                     >
                         {folder.map((item, index) => (
                             <SwiperSlide key={index}>
-                                <h1 style={{ justifyContent: 'flex-start', fontSize: '2rem', fontWeight: '500', fontFamily: 'serif' }}> Day {item.folder.slice(3)}</h1>
-                                <Image
-                                    src={item.mainImage}
-                                    alt="Main Image"
-                                    height={450} width={450}
-                                />
+                                    <h1 style={{ justifyContent: 'flex-start', fontSize: '2rem', fontWeight: '500', fontFamily: 'serif' }}> Day {item.folder.slice(3)}</h1>
+                                    <Image
+                                        src={item.mainImage}
+                                        alt="Main Image"
+                                        height={450} width={450}
+                                        style={{marginLeft:"0.1rem"}}
+                                    />
                             </SwiperSlide>
                         ))}
                     </Swiper>

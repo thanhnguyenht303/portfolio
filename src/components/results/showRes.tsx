@@ -19,8 +19,8 @@ const ShowRes : React.FC = () => {
     return (
         <>
             <Swiper navigation={true} modules={[Navigation]}>
-                <SwiperSlide onClick={() => {setIsModalOpen(true); setActivationSlideIndex(0)}}><RNNRes /></SwiperSlide>
-                <SwiperSlide onClick={() => {setIsModalOpen(true); setActivationSlideIndex(1)}}><CNNRes /></SwiperSlide>
+                <SwiperSlide onClick={() => {setIsModalOpen(true); setActivationSlideIndex(0)}}><CNNRes /></SwiperSlide>
+                <SwiperSlide onClick={() => {setIsModalOpen(true); setActivationSlideIndex(1)}}><RNNRes /></SwiperSlide>
             </Swiper>
             <Modal
                 isOpen={isModalOpen}
@@ -29,8 +29,8 @@ const ShowRes : React.FC = () => {
                 }}
             >
                 <Swiper navigation={true} modules={[Navigation]} initialSlide={activationSlideIndex}>
-                    <SwiperSlide><RNNModalRes /></SwiperSlide>
                     <SwiperSlide><CNNModalRes /></SwiperSlide>
+                    <SwiperSlide><RNNModalRes /></SwiperSlide>
                 </Swiper>
             </Modal>
         </>
